@@ -24,7 +24,7 @@ It is tested using JUnit framework and Arquillian.
 Some of tests I decided to mock by myself in order to keep it simple.
 
 ## Lombok
-I usually use the Lombok project in all of my sources. I love that project, but in this case, it was used only to generate the equals and hashCode method.
+I usually use the Lombok project in all of my sources. I love that project, but in this case, it was used only to generate the equals and hashCode methods.
 
 
 
