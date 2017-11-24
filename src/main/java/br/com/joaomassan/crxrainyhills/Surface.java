@@ -19,7 +19,7 @@ public class Surface {
 
     private Integer volume;
 
-    public Surface(int[] surface) {
+    private Surface(int[] surface) {
         if (surface == null) {
             throw new IllegalArgumentException("Surface array can't be null.");
         }
