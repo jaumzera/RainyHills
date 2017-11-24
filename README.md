@@ -17,7 +17,7 @@ a main entrypoint for the application.
 At the `index.html` file I hardcode some links to illustrated the service call.
 
 ## Container
-This project was originally developed suing Payara 4.1.
+This project was originally developed using Payara 4.1.
 
 ## Tests
 It is tested using JUnit framework and Arquillian.
