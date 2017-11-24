@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.joaomassan</groupId>
-    <artifactId>CrxRainyHills</artifactId>
+    <artifactId>RainyHills</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>CrxRainyHills</name>
+    <name>RainyHills</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -59,6 +59,7 @@
             <groupId>org.glassfish.main.extras</groupId>
             <artifactId>glassfish-embedded-all</artifactId>
             <version>4.1.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

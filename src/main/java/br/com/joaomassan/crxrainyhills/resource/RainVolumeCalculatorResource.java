@@ -35,7 +35,7 @@ public class RainVolumeCalculatorResource {
             @QueryParam("surface") List<Integer> surfaceValues) {
 
         assert (surfaceValues != null) : "Surfaces must not be null";
-        
+
         JsonObject returnValue;
 
         try {
@@ -43,9 +43,13 @@ public class RainVolumeCalculatorResource {
                     .add("status", "OK")
                     .add("rainVolume",
                             rainVolumeService.caculateTheRainVolume(
-                                    surfaceValues.stream().mapToInt(
-                                            Integer::intValue).toArray()))
-                    .build();
+                                    surfaceValues.stream()
+                                            .mapToInt((value) -> {
+                                                return value != null
+                                                        ? value.intValue()
+                                                        : 0;
+                                            }).toArray())
+                    ).build();
         } catch (InvalidSurfaceException | EJBException ex) {
             returnValue = Json.createObjectBuilder()
                     .add("status", "NOK")

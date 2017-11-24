@@ -39,9 +39,8 @@ public class RainVolumeServiceTest {
 
     @Test
     public void shouldThrowAnInvalidSurfaceException() {
-        RainVolumeService rvs = new RainVolumeService();
         try {
-            rvs.caculateTheRainVolume(null);
+            rainVolumeService.caculateTheRainVolume(null);
             Assert.assertTrue(false);
         } catch (InvalidSurfaceException ex) {
             Assert.assertTrue(ex instanceof InvalidSurfaceException);
